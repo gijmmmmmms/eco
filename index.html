@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>экоцифры</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">экоцифры</a>
+      <nav class="main-nav" aria-label="главное меню">
+        <a href="#home">главная</a>
+        <a href="#consulting">консалтинг</a>
+        <a href="#services">услуги</a>
+        <a href="#projects">проекты</a>
+        <a href="#about">о нас</a>
+        <a href="#contacts" class="btn-contact">контакты</a>
+      </nav>
+      <button class="burger" aria-label="открыть меню">☰</button>
+    </div>
+  </header>
+  <section id="home" class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="media/placeholder.webm" type="video/mp4" />
+      ваш браузер не поддерживает видео. вместо видео будет изображение.
+    </video>
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <h1>Интеллект и устойчивость в цифровых проектах</h1>
+        <p class="lead">консалтинг, проектная документация, строительно-монтажные решения</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn">наши проекты</a>
+          <a href="#contacts" class="btn ghost">свяжитесь с нами</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section id="consulting" class="section">
+      <div class="container">
+        <h2>Консалтинг</h2>
+        <p>Команда ООО «Экоцифры» обладает богатым опытом в сфере консалтинга — начиная от разработки стратегий и
+          заканчивая их успешным внедрением.</br>
+          Мы гарантируем практическую реализуемость каждого предложения, опираясь на широкий спектр профессиональных
+          знаний в различных областях и глубокую отраслевую экспертизу нашей команды. Мы максимально используем
+          возможности, чтобы создавать и реализовывать решения любой сложности, обеспечивая комплексный и эффективный
+          подход к развитию ваших бизнес-процессов.
+        </p>
+        <div class="consulting-cards-grid">
+          <article class="consult-card investment">
+            <div class="card-image"><img src="media/investment.svg"></div>
+            <h3>Инвестиционный консалтинг</h3>
+            <div class="card-content">
+              <p>Разработка бизнес-плана</p>
+              <p>Экспертиза бизнес-плана</p>
+              <p>Анализ рисков</p>
+            </div>
+          </article>
+
+          <article class="consult-card legal">
+            <div class="card-image"><img src="media/legal.svg"></div>
+            <h3>Юридический консалтинг</h3>
+            <div class="card-content">
+              <p>Сопровождение сделки</p>
+              <p>Оформление документов</p>
+              <p>Полное сопровождение</p>
+            </div>
+          </article>
+
+          <article class="consult-card marketing">
+            <div class="card-image"><img src="media/marketing.svg"></div>
+            <h3>Маркетинговый консалтинг</h3>
+            <div class="card-content">
+              <p>Анализ рынка</p>
+              <p>Целевая аудитория</p>
+              <p>Стратегия позиционирования</p>
+            </div>
+          </article>
+
+          <article class="consult-card management">
+            <div class="card-image"><img src="media/manager.svg"></div>
+            <h3>Управленческий консалтинг</h3>
+            <div class="card-content">
+              <p>Диагностика организации</p>
+              <p>Оптимизация процессов</p>
+              <p>Управление изменениями</p>
+            </div>
+          </article>
+
+          <article class="consult-card strategy">
+            <div class="card-image"><img src="media/strategy.svg"></div>
+            <h3>Стратегический консалтинг</h3>
+            <div class="card-content">
+              <p>Анализ среды</p>
+              <p>Миссия и видение</p>
+              <p>Стратегические цели</p>
+            </div>
+          </article>
+        </div>
+    </section>
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>услуги</h2>
+      </div>
+    </section>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>проекты</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+        <div class="project-grid">
+          <div class="project">Lorem ipsum</div>
+          <div class="project">Lorem ipsum</div>
+          <div class="project">Lorem ipsum</div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>о нас</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+    </section>
+    <section id="contacts" class="section contact-section">
+      <div class="container">
+        <h2>контакты</h2>
+        <p>Lorem ipsum</p>
+        <div class="contact-grid">
+          <div>тел: +7 (000) 000-00-00</div>
+          <div>email: -</div>
+          <div>адрес: </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> экоцифра — все права защищены</small>
+    </div>
+  </footer>
+  <script>
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
