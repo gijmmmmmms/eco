@@ -7,6 +7,7 @@
   <title>экоцифры</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
@@ -24,7 +25,7 @@
   </header>
   <section id="home" class="hero">
     <video class="hero-video" autoplay muted loop playsinline>
-      <source src="media/placeholder.webm" type="video/mp4" />
+      <source src="media/fc.webm" type="video/mp4" />
       ваш браузер не поддерживает видео. вместо видео будет изображение.
     </video>
     <div class="hero-overlay">
@@ -103,21 +104,79 @@
     </section>
     <section id="services" class="section alt">
       <div class="container">
-        <h2>услуги</h2>
-      </div>
-    </section>
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>проекты</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <h2>Услуги</h2>
+        <p class="services-lead">
+          Мы ведём проект от идеи до реализации: проектная документация, изыскания и строительство.
+        </p>
 
-        <div class="project-grid">
-          <div class="project">Lorem ipsum</div>
-          <div class="project">Lorem ipsum</div>
-          <div class="project">Lorem ipsum</div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-number">01</div>
+            <div class="timeline-content">
+              <h3>Проектная документация</h3>
+              <p>Разработка всех документов для стройки: анализ участка, концепция, инженерные схемы и рабочие чертежи.
+              </p>
+              <ul>
+                <li>Анализ и техническое задание</li>
+                <li>Архитектурные и инженерные решения</li>
+                <li>Полный комплект рабочих чертежей</li>
+              </ul>
+              <div class="service-icon">
+                <img src="media/icon-docs.svg" alt="Документация">
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-number">02</div>
+            <div class="timeline-content">
+              <h3>Проектно-изыскательские работы</h3>
+              <p>Сбор исходных данных: геодезия, геология, гидрология и экология для безопасного и экономичного проекта.
+              </p>
+              <ul>
+                <li>Геодезическая и топографическая съёмка</li>
+                <li>Геология и гидрология участка</li>
+                <li>Экологические исследования</li>
+              </ul>
+              <div class="service-icon">
+                <img src="media/icon-glass.svg" alt="Изыскания">
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-number">03</div>
+            <div class="timeline-content">
+              <h3>Строительно-монтажные работы</h3>
+              <p>Реализация проекта «под ключ»: подготовка, возведение конструкций, инженерные сети, отделка и
+                благоустройство.</p>
+              <ul>
+                <li>Подготовка площадки и земляные работы</li>
+                <li>Монтаж конструкций и инженерных систем</li>
+                <li>Отделка и сдача объекта</li>
+              </ul>
+              <div class="service-icon">
+                <img src="media/icon-build.svg" alt="Строительство">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Реализованные проекты</h2>
+        <p>Демонстрационное представление на карте реализованных проектов.</p>
+
+        <div class="map-wrapper">
+          <img src="media/russia.svg" alt="Карта России" class="map">
+          <div class="project-dot" style="top: 72%; left: 22%;" title="Проект в ***"></div>
+          <div class="project-dot" style="top: 67%; left: 30%;" title="Проект в ***"></div>
+          <div class="project-dot" style="top: 64%; left: 16%;" title="Проект в ***"></div>
+          <div class="project-dot" style="top: 72%; left: 48%;" title="Проект в ***"></div>
+          <div class="project-dot" style="top: 84%; left: 60%;" title="Проект в ***"></div>
+        </div>
+      </div>
+    </section>
+
     <section id="about" class="section alt">
       <div class="container">
         <h2>о нас</h2>
